@@ -10,4 +10,14 @@ const isItDoneYet = new Promise((resolve, reject) => {
   }
 });
 
-console.log(isItDoneYet);
+const checkIfItsDone = () => {
+  isItDoneYet
+  .then(ok => {
+    console.log(ok)
+  })
+  .catch(err => {
+    console.error(err)
+  })
+}
+
+checkIfItsDone();
