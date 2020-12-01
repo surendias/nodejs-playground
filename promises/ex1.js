@@ -1,4 +1,4 @@
-let done = true;
+let done = false;
 
 const isItDoneYet = new Promise((resolve, reject) => {
   if (done) {
@@ -9,3 +9,5 @@ const isItDoneYet = new Promise((resolve, reject) => {
     reject(why);
   }
 });
+
+console.log(isItDoneYet);
